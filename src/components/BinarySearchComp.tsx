@@ -46,9 +46,9 @@ const BinarySearchComp: React.FC<BinarySearchComponentProps> = ({
         value={ele}
         onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEle(e.target.value)}
         placeholder="Enter the element you want to search"
-        className="border border-gray-300 rounded p-2 mr-2"
+        className="border border-gray-300 rounded p-2 mr-2 text-black"
       />
-      <button onClick={handleSearch} className="bg-blue-600 text-white rounded p-2">
+      <button onClick={handleSearch} className="bg-blue-600 text-black rounded p-2">
         Search
       </button>
 
