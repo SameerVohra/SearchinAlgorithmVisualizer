@@ -25,7 +25,6 @@ export const Home = () => {
   return (
     <>
       {err && <h1 className="text-red-500">{err}</h1>}
-      <h1 className="text-xl font-bold">THIS IS MY MAIN PAGE</h1>
       
       <form onSubmit={handleSubmit} className="my-4">
         <input
@@ -43,7 +42,6 @@ export const Home = () => {
       <select value={algo} onChange={(e) => setAlgo(e.currentTarget.value)}>
         <option value="linear">LINEAR SEARCH</option>
         <option value="binary">BINARY SEARCH</option>
-        <option value="jump">JUMP SEARCH</option>
       </select>
 
       {algo === 'linear' && (
