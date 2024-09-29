@@ -4,14 +4,14 @@ const LinearSearch = async (
   setCurrentIndex: (index: number | null) => void
 ): Promise<number> => {
   for (let i = 0; i < arr.length; i++) {
-    setCurrentIndex(i); // Highlight the current index
-    await new Promise((resolve) => setTimeout(resolve, 500)); // Add delay for visibility
+    setCurrentIndex(i);
+    await new Promise((resolve) => setTimeout(resolve, 500));
     if (arr[i] === element) {
-      setCurrentIndex(null); // Reset after finding
+      setCurrentIndex(null); 
       return i;
     }
   }
-  setCurrentIndex(null); // Reset after finishing search
+  setCurrentIndex(null);
   return -1;
 };
 
